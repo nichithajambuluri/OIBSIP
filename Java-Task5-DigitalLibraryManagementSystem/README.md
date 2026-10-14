@@ -1,45 +1,32 @@
-# Lumina Digital Library Management System
+# Lumina — Digital Library Management System
+**Oasis Infobyte | Java Development | Task 5**
 
-**Oasis Infobyte — Java Development Internship | Task 5**
-
-## Project Overview
-Lumina is a web-based digital library management application built with Java and Spring Boot. It helps librarians manage books, members, borrowing, returns, and reservations through a browser-based interface.
-
-## Technologies Used
-- Java 17+
-- Spring Boot
-- Spring Data JPA
-- Thymeleaf
-- HTML and CSS
-- SQLite
-- Maven
+A responsive web-based library management application built with Java 17, Spring Boot, Thymeleaf, Spring Data JPA and SQLite.
 
 ## Features
-- Admin and reader login
-- Book catalogue and search
-- Add, edit, and delete books
-- Library member management
-- Book issue and return management
-- Due-date and overdue fine calculation
-- Book reservations
-- Reader queries
+- Dashboard with catalogue, members, active loans and overdue metrics
+- Demo Admin and Reader login
+- Searchable book catalogue and category filter
+- Add, edit and delete book records
+- Register and view members
+- Issue and return books; available stock updates automatically
+- 14-day loan period and overdue fine calculation at ₹5/day
+- Reserve titles and store reader queries in the database
+- Responsive dark-navy / blue / mint UI
 
-## Project Structure
-- `src/main/java/` — Java application code
-- `src/main/resources/templates/` — HTML templates
-- `src/main/resources/static/` — CSS and static assets
-- `pom.xml` — Maven dependencies and build configuration
+## Run
+1. Install JDK 17+ and Maven 3.9+.
+2. Open this folder in IntelliJ IDEA and wait for Maven import.
+3. Run `src/main/java/com/oasis/library/DigitalLibraryApplication.java`.
+4. Visit `http://localhost:8080`.
 
-## How to Run
-1. Install JDK 17 or later.
-2. Open the project in IntelliJ IDEA.
-3. Load the Maven project and wait for dependencies to download.
-4. Run `DigitalLibraryApplication.java`.
-5. Open `http://localhost:8080/login` in your browser.
+Or run `mvn spring-boot:run` from this directory.
 
-## Demo Credentials
-Use the demo credentials documented in the project README after verifying the application runs correctly.
+## Demo accounts
+- Admin: `admin@lumina.local` / `Admin@123`
+- Reader: `reader@lumina.local` / `Reader@123`
 
-## Internship
-Oasis Infobyte — Java Development Internship  
-Task 5: Digital Library Management System
+This is an educational demo. Before production use, add robust authorization, password hashing, CSRF protection and stronger validation. Database `lumina-library.db` is created locally.
+
+## Suggested screenshots
+Dashboard, catalogue search, add-book form, members, issue/return, reservations, and reader queries.
