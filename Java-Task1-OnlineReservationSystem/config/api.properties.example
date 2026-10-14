@@ -1,0 +1,7 @@
+# Copy this file to api.properties and add your Indian Rail API key.
+# api.properties is ignored by Git and should NEVER be committed.
+api.baseUrl=http://indianrailapi.com/api/v2
+api.key=YOUR_API_KEY_HERE
+api.enabled=false
+api.connectTimeoutSeconds=10
+api.readTimeoutSeconds=15
